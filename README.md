@@ -15,8 +15,12 @@ export LDCFLAGS=$TOOLCHAIN_DIR/usr/lib
 export LD_LIBRARY_PATH=$TOOLCHAIN_DIR/usr/lib
 
 export PATH=$TOOLCHAIN_DIR/bin:$PATH
-3) Go in the directory of the sources of this repository
-4) Cross-compile the libev with these commands :
 
-make CC=folder-of-the-SDK/staging_dir/toolchain-architecture-to-change_gcc-number-to-change_musl/bin/architecture-openwrt-linux-gcc LD=folder-of-the-SDK/staging_dir/toolchain-architecture-to-change_gcc-number-to-change_musl/bin/architecture-openwrt-linux-ld
+export CC=$TOOLCHAIN_DIR/bin/mipsel-openwrt-linux-gcc
+
+export LD=$TOOLCHAIN_DIR/bin/mipsel-openwrt-linux-ld
+3) Go in the directory of the sources of this repository
+4) Cross-compile the libev with this command :
+
+make
 5) The "multicat" file created is the binary for your architecture
