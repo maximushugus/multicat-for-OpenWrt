@@ -37,7 +37,7 @@
 #include <poll.h>
 #include <syslog.h>
 
-#include <bitstream/ietf/rtp.h>
+#include "bitstream/ietf/rtp.h"
 
 #include "util.h"
 
