@@ -32,7 +32,7 @@
 #include <errno.h>
 #include <syslog.h>
 
-#include <bitstream/mpeg/ts.h>
+#include "bitstream/mpeg/ts.h"
 
 #include "util.h"
 
